@@ -430,7 +430,7 @@ $g = 1.99;
 
 
     body {
-        background-image: url("https://cdn.hipwallpaper.com/i/50/63/p5bzLy.jpg");
+        background-image: url("https://cdn.wallpapersafari.com/66/57/Mmqnkc.jpg");
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;

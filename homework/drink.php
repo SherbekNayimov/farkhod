@@ -354,12 +354,15 @@ $g = 2.99;
 
 <style>
     body {
-        background-image: url("https://cdn.hipwallpaper.com/i/50/63/p5bzLy.jpg");
+        background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/fe7d8f49-1592-450d-a401-48b9ec8666b9/d39nyc6-cfb4aa34-526b-4782-8961-89c227a0c330.jpg/v1/fill/w_900,h_675,q_75,strp/fire_lion_by_artsoltan_d39nyc6-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD02NzUiLCJwYXRoIjoiXC9mXC9mZTdkOGY0OS0xNTkyLTQ1MGQtYTQwMS00OGI5ZWM4NjY2YjlcL2QzOW55YzYtY2ZiNGFhMzQtNTI2Yi00NzgyLTg5NjEtODljMjI3YTBjMzMwLmpwZyIsIndpZHRoIjoiPD05MDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.4LqF3AGDzmC1l75bz6UwmHOBsA-6OiFcnN6qul9-B_A");
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
         color: white;
         text-align: center;
+
+
+
 
 
     }

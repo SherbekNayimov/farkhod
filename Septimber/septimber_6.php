@@ -67,8 +67,6 @@ foreach ($numbers as $number){
         line-height: 50px;
         font-weight: bolder;
         box-shadow: 5px 5px 15px 17px black;
-
-
     }
     .odd_num{
         background-color: #3e8e41;
