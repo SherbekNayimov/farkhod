@@ -10,6 +10,12 @@
             cursor: pointer;
             transition: 0.3s;
         }
+        #myImg {
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
 
         #myImg:hover {opacity: 0.7;}
 
@@ -97,7 +103,7 @@
 <h2>Image Modal</h2>
 
 <img id="myImg" src="https://www.treehugger.com/thmb/yoO0FjZ10YZVpPk4jSX5giwNbxY=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__mnn__images__2014__12__snowflake-84c87424d5734b03ab1ca695c5a423c6.jpg" alt="Snow" style="width:100%;max-width:300px">
-
+<img id="myImg" src="https://www.treehugger.com/thmb/yoO0FjZ10YZVpPk4jSX5giwNbxY=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__mnn__images__2014__12__snowflake-84c87424d5734b03ab1ca695c5a423c6.jpg" alt="Snow" style="width:100%;max-width:300px">
 <!-- The Modal -->
 <div id="myModal" class="modal">
     <span class="close">&times;</span>
