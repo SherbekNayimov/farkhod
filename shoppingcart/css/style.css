@@ -1,36 +1,60 @@
-.displayed_img{
-    width: 100%;
-}
 
 .large_image_window{
-    width: 400px;
+    width: 300px;
     height: 300px;
     position: absolute;
     left: 15%;
-    top: 25%;
+    top: 30%;
+    display: none;
+
+}
+.large_image_window:hover{
+    background-color: white;
+    width: 380px;
+    height: 380px;
+    position: absolute;
+    left: 15%;
+    top: 30%;
     display: none;
 }
 
-.new_price{
-    color: #0f5403;
+.discount{
+    color: darkred;
 }
-.old_price{
+.newpr{
+    color: #730505;
+}
+.oldpr{
     text-decoration: line-through;
-    color: #969090;
+    color: silver;
 }
-.discount_icon{
+.dis_icon{
     width: 30px;
     position: relative;
-    right: 5px;
-    top: 5px;
+    right: 2px;
+    top: 2px;
 }
 .product {
-    background-image: url("https://cdn3.iconfinder.com/data/icons/ecommerce-flat-style-2/512/e_-_Commerce_-_Flat_Style_2-05-128.png");
-    background-size: 100% 100%;
+    background-image: url("https://cdn2.iconfinder.com/data/icons/e-commerce-4/256/Add_to_Shopping_Basket-512.png");
+    background-size: 90% 90%;
     background-position: center;
-    width: 29px;
+    background-color: #4cd137;
+    width: 35px;
+    height: 35px;
     position: relative;
     top: 9px;
+    box-shadow: 0 4px;
+    color: grey;
+    border-radius: 50%;
+
+}
+.product:active{
+    box-shadow: 0 1px;
+    transform: translateY(3px);
+    color: red;
+}
+.product:hover{
+    background-color: #00ee00;
 }
 
 .shopping_cart {
@@ -47,7 +71,16 @@
     color: red;
     font-weight: bolder;
     border: none !important;
-    cursor: pointer;
+    box-shadow: 0 4px;
+    border-radius: 50%;
+}
+.shopping_cart:active{
+    box-shadow: 0 1px;
+    transform: translateY(3px);
+    color: red;
+}
+.shopping_cart:hover{
+    background-color: blue;
 }
 
 .sh_add_btn {
@@ -65,8 +98,12 @@ th {
 }
 
 tr:nth-child(even) {
-    background-color: lightgrey;
+    background-color: lavenderblush;
 }
+tr:nth-child(odd) {
+    background-color: lightgray;
+}
+
 
 .product_icon {
     width: 70px;
@@ -82,9 +119,11 @@ table {
 
 .container-fluid {
     text-align: center;
+    background-color: silver;
 }
-
-body {
-
-    color: #6b6262;
+body{
+    background-color: #730505;
+}
+.display_img{
+    width: 100%;
 }

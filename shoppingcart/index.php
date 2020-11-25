@@ -7,13 +7,16 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <script src="/"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="/jquery-3.5.1.js"></script>
     <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+
 </head>
 <body>
-<?php include_once "includes/index_include.php";?>
+<?php
+
+include "includes/index_include.php"; ?>
 <div class="container-fluid">
     <div class="large_image_window">
 
@@ -34,7 +37,6 @@
             <th>Price</th>
             <th>QTY</th>
         </tr>
-
         <?php
         foreach ($products as $product) {
             ?>
@@ -46,17 +48,16 @@
                 <td><?php echo $product['description']; ?></td>
                 <td>
                     <?php
-                    $price = $newprice = $product['price'];
+                    $price= $newprice = $product['price'];
                     $discount = $product['discount'];
-
                     if ($discount>0) {
-                        $newprice = $price - ($price * $discount / 100);
-                        echo "<img class=\"discount_icon\" src = \"https://www.iconninja.com/files/452/351/726/discount-tag-icon.png\">";
-
-                        echo "<span class='new_price'>\$$newprice</span>";
+                        $newprice =  ($price * $discount / 100);
+                        echo "<span class='discount'> $discount</span>";
+                        echo  "<img class=\"dis_icon\" src = \"https://cdn.iconscout.com/icon/premium/png-256-thumb/discount-2595609-2166035.png\">";
+                        echo "<span class='newpr'> \$$newprice</span>";
                         echo "<br>";
-                        echo "<span class='old_price'>\$$price</span>";
-                    }else{
+                        echo "<span class='oldpr'> \$$price</span>";
+                    }else {
                         echo "$".$price;
                     }
 
@@ -86,12 +87,15 @@
             <?php
         }
         ?>
-
     </table>
-    <hr>
-    <a class="btn btn-success" href="index.php?action=empty">Empty Shopping Cart</a>
 </div>
-<?php include_once "modal.php";?>
 
+<?php
+include "modal.php"; ?>
+<script src="js/script.js"></script>
 </body>
 </html>
+
+
+
+
